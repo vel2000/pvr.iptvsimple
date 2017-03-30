@@ -446,6 +446,7 @@ PVR_ERROR SignalStatus(PVR_SIGNAL_STATUS &signalStatus)
 const char * GetLiveStreamURL(const PVR_CHANNEL &channel)  { return ""; }
 bool CanPauseStream(void) { return false; }
 int GetRecordingsAmount(bool deleted) { return -1; }
+PVR_ERROR IsRecordable(const EPG_TAG& tag, bool* isRecordable) { return PVR_ERROR_NOT_IMPLEMENTED; }
 PVR_ERROR GetRecordings(ADDON_HANDLE handle, bool deleted) { return PVR_ERROR_NOT_IMPLEMENTED; }
 PVR_ERROR OpenDialogChannelScan(void) { return PVR_ERROR_NOT_IMPLEMENTED; }
 PVR_ERROR CallMenuHook(const PVR_MENUHOOK &menuhook, const PVR_MENUHOOK_DATA &item) { return PVR_ERROR_NOT_IMPLEMENTED; }

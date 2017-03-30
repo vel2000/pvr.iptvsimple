@@ -444,6 +444,7 @@ PVR_ERROR SignalStatus(PVR_SIGNAL_STATUS &signalStatus)
 
 /** UNUSED API FUNCTIONS */
 const char * GetLiveStreamURL(const PVR_CHANNEL &channel)  { return ""; }
+bool IsPlayable(const EPG_TAG &tag) { return false; }
 bool CanPauseStream(void) { return false; }
 int GetRecordingsAmount(bool deleted) { return -1; }
 PVR_ERROR IsRecordable(const EPG_TAG& tag, bool* isRecordable) { return PVR_ERROR_NOT_IMPLEMENTED; }
